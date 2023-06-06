@@ -1,38 +1,56 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+}
+
+.App_wraper{
+  width: min(100%, 720px);
+  margin: 0px auto;
+  height: 100%;
+  /* background-color: #282c3490; */
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+.Holst{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+
+}
+
+.dot{
+  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.dot_Box{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
+  box-sizing:border-box;
+  position: fixed;
+  z-index: 10;
+  padding: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.modal {
+  width: 100%;
+  display: flex;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal input{
+  width: 75%;
+  padding: 0 10px;
+  margin: 0 auto;
+  background-color:inherit;
+  border-radius: 15px;
+  box-shadow: 0 0 0 1px black;
+}
+.Comment{
+  width: calc(100%-10px);
+  padding: 5px;
+  word-wrap: break-word;
+  text-align: center;
+  border-radius: 10px;
+  
 }
